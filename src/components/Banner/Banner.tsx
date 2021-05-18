@@ -21,10 +21,16 @@ export function Banner() {
     >
       <Flex>
         <Stack pl="140px">
-          <Heading pt="80px" fontWeight="medium" fontSize={36} maxWidth={640}>
+          <Heading
+            color="gray.50"
+            pt="80px"
+            fontWeight="medium"
+            fontSize={36}
+            maxWidth={640}
+          >
             5 Continentes,
           </Heading>
-          <Heading fontWeight="medium" fontSize={36}>
+          <Heading color="gray.50" fontWeight="medium" fontSize={36}>
             infinitas possibilidades
           </Heading>
           <Text
