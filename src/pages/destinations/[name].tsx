@@ -23,7 +23,14 @@ export default function Destination() {
           <HStack spacing="42px">
             <TextBox heading="50" body="países" />
             <TextBox heading="60" body="línguas" />
-            <TextBox heading="27" body="cidades +100" />
+            <TextBox
+              heading="27"
+              body="cidades +100"
+              leading={{
+                body: "Clique para ver a lista completa.",
+                header: "Saiba mais"
+              }}
+            />
           </HStack>
         </HStack>
         <Heading pt="80px" fontWeight="medium" fontSize={36}>
