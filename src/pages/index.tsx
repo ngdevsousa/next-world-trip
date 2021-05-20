@@ -20,7 +20,7 @@ export default function Home() {
       <Banner />
       <HStack justifyContent="space-between" pt="80px" pl="140px" pr="140px">
         {categories.map((i) => (
-          <CategoryIcon image={i.imageURL} text={i.category} />
+          <CategoryIcon key={i.id} image={i.imageURL} text={i.category} />
         ))}
       </HStack>
       <Center pl="140px" pr="140px" pt="80px">

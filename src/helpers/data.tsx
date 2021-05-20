@@ -56,22 +56,27 @@ export const continents = [
 
 export const categories = [
   {
+    id: 1,
     category: "Vida noturna",
     imageURL: "cocktail.svg"
   },
   {
+    id: 2,
     category: "Praia",
     imageURL: "surf.svg"
   },
   {
+    id: 3,
     category: "Moderno",
     imageURL: "building.svg"
   },
   {
+    id: 4,
     category: "Clássico",
     imageURL: "museum.svg"
   },
   {
+    id: 5,
     category: "E mais...",
     imageURL: "earth.svg"
   }
