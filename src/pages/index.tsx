@@ -5,45 +5,23 @@ import {
   Flex,
   Heading,
   HStack,
-  Image,
   Stack
 } from "@chakra-ui/react";
 import { Banner } from "../components/Banner/Banner";
 import { CategoryIcon } from "../components/CategoryIcon/CategoryIcon";
 import { CustomSwiper } from "../components/CustomSwiper/CustomSwiper";
-import { ContinentInfo } from "../components/CustomSwiper/types";
+import { Header } from "../components/Header/Header";
+import { categories, continents } from "../helpers/data";
 
 export default function Home() {
-  const continents: Array<ContinentInfo> = [
-    {
-      name: "Europa",
-      description: "O continente mais antigo.",
-      imageURL: "continents/EU.png"
-    },
-    {
-      name: "Europa",
-      description: "O continente mais antigo.",
-      imageURL: "continents/EU.png"
-    },
-    {
-      name: "Europa",
-      description: "O continente mais antigo.",
-      imageURL: "continents/EU.png"
-    }
-  ];
-
   return (
     <Flex w="100vw" h="100vh" flexDirection="column" overflowX="hidden">
-      <Center pt="7" pb="7">
-        <Image src="logo.svg" w={180} h={45} />
-      </Center>
+      <Header />
       <Banner />
       <HStack justifyContent="space-between" pt="80px" pl="140px" pr="140px">
-        <CategoryIcon image="cocktail.svg" text="Vida noturna" />
-        <CategoryIcon image="surf.svg" text="Praia" />
-        <CategoryIcon image="building.svg" text="Moderno" />
-        <CategoryIcon image="museum.svg" text="Clássico" />
-        <CategoryIcon image="earth.svg" text="E mais..." />
+        {categories.map((i) => (
+          <CategoryIcon image={i.imageURL} text={i.category} />
+        ))}
       </HStack>
       <Center pl="140px" pr="140px" pt="80px">
         <Box h="1px" w="90px" bgColor="gray.400" />
