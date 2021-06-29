@@ -1,9 +1,23 @@
-## Getting Started
+## Description
 
-First, run the development server:
+Frontend application built using React and ChakraUI.
+
+## Challenge Requirements
+
+Implement design from Scratch using NextJS and ChakraUI
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ yarn install
+```
+
+## Running the app
+
+```bash
+# development
+$ yarn dev
+
+# production mode
+$ yarn build && yarn start
 ```
